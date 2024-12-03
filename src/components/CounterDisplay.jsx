@@ -1,15 +1,17 @@
 import React , { useContext ,useState } from 'react'
 import './counterDisplay.css'
+import Increment  from './Increment';
+import Decrement from './Decrement';
 import { CounterContext } from '../CounterContext';
 
 const CounterDisplay = () => {
-    const {count,Increment,Decrement} = useContext(CounterContext);
+  const {count} = useContext(CounterContext);
 
   return (
     <div className='display'>
-        <button onClick={Increment}>Increment</button>
+        <Increment />
         <h1>{count}</h1>
-        <button onClick={Decrement}>Decrement</button>
+        <Decrement />
     </div>
   )
 }

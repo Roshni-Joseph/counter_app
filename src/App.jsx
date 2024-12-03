@@ -8,7 +8,6 @@ function App() {
     <div>
       <CounterContextProvider>
         <CounterDisplay />
-        {/* <CounterControls /> */}
       </CounterContextProvider>
     </div>
   )
